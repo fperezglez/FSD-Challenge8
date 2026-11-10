@@ -1,6 +1,6 @@
 # Challenge 8 --- Protecting the prototype
 
-**Multimedia Security: Robust Digital Watermarking**
+**Data Forensics and Security: Robust Digital Watermarking**
 
 This repository contains the material and Python code for Challenge 8.
 The exercise introduces two transform-domain watermarking
