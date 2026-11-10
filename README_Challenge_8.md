@@ -1,10 +1,10 @@
-# Challenge 8 --- Who leaked the prototype?
+# Challenge 8 --- Protecting the prototype
 
 **Multimedia Security: Robust Digital Watermarking**
 
 This repository contains the material and Python code for Challenge 8.
 The exercise introduces two transform-domain watermarking
-techniques---Spread Spectrum (SS) and Scalar Costa Scheme / STDM---and
+techniques---Spread Spectrum (SS) and Spread Transform Dither Modulation / STDM---and
 compares their detection performance before and after JPEG compression.
 
 ## Objectives
@@ -22,24 +22,16 @@ The project is organised into student and instructor versions:
 ``` text
 .
 ├── README.md
-├── Challenge_8_Who_Leaked.tex
-├── students/
-│   ├── watermarking.py
-│   ├── detectors.py
-│   ├── run_experiments.py
-│   ├── requirements.txt
-│   └── data/
-│       └── t046.png
-└── instructor/
-    ├── watermarking.py
-    ├── detectors.py
-    ├── run_experiments.py
-    ├── requirements.txt
-    └── data/
-        └── t046.png
+├── watermarking.py
+├── detectors.py
+├── run_experiments.py
+├── requirements.txt
+└── data/
+     └── t046.png
+
 ```
 
-The student version contains the detector functions to be completed. The
+detectors.py contains the detector functions to be completed. The
 instructor version contains reference implementations.
 
 The input image may be distributed separately. Place the image specified
@@ -104,7 +96,7 @@ adding a scaled, unit-norm spreading sequence. The embedding strength is
 controlled by `gamma`. Detection correlates the received tile with its
 spreading sequence and decides the bit from the sign of the correlation.
 
-### Scalar Costa Scheme / STDM
+### Spread Transform Dither Modulation / STDM
 
 For each tile, the host coefficient vector is projected onto a unit-norm
 spreading sequence. The projection is quantized to the coset associated
