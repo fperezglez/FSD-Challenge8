@@ -4,7 +4,7 @@
 
 This repository contains the material and Python code for Challenge 8.
 The exercise introduces two transform-domain watermarking
-techniques---Spread Spectrum (SS) and Spread Transform Dither Modulation / STDM---and
+techniques---Spread Spectrum (SS) and Spread Transform Dither Modulation (STDM)---and
 compares their detection performance before and after JPEG compression.
 
 ## Objectives
